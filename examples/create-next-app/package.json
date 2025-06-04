@@ -10,6 +10,7 @@
     "build:worker": "pnpm opennextjs-cloudflare build",
     "preview:worker": "pnpm opennextjs-cloudflare preview",
     "preview": "pnpm build:worker && pnpm preview:worker",
+    "deploy:worker": "pnpm build:worker && pnpm opennextjs-cloudflare deploy",
     "e2e": "playwright test -c e2e/playwright.config.ts"
   },
   "dependencies": {
